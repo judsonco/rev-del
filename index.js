@@ -26,7 +26,7 @@ function revDel(options, cb) {
 
 		if (options.base) {
 			oldFiles = _.map(oldFiles, function (file) {
-				return path.join(options.dest || options.base, file);
+				return path.join(options.base || options.dest, file);
 			});
 		}
 
